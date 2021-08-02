@@ -1,0 +1,51 @@
+﻿@model IEnumerable<proyecto.Models.Pet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Birth_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.Names)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Type.Descript)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Birth_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owner.Names)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Type.Descript)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_Pets }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_Pets }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_Pets })
+        </td>
+    </tr>
+}
+
+</table>

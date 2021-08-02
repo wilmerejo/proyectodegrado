@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0e47cdd7776b453a9db26f660e2f628f" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="UniversityModel.Course" Width="1.5" PointX="2.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.CourseInstructor" Width="1.5" PointX="5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Department" Width="1.5" PointX="5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Enrollment" Width="1.5" PointX="5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Instructor" Width="1.5" PointX="2.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Owner" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Pet_Type" Width="1.5" PointX="5.875" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Pet" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.Student" Width="1.5" PointX="2.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityModel.sysdiagram" Width="1.5" PointX="10.125" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="UniversityModel.FK_CourseInstructor_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_Enrollment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_CourseInstructor_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_Department_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_Enrollment_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_Pets_Owners" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityModel.FK_Pets_Pet_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

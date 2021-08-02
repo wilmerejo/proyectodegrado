@@ -1,0 +1,50 @@
+﻿@model proyecto.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birth_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birth_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner.Names)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner.Names)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet_Type.Descript)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet_Type.Descript)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Pets }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
